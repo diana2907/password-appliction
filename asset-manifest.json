@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/password-appliction/static/css/main.bf66c2fc.css",
+    "main.js": "/password-appliction/static/js/main.9a7ff5dc.js",
+    "index.html": "/password-appliction/index.html",
+    "main.bf66c2fc.css.map": "/password-appliction/static/css/main.bf66c2fc.css.map",
+    "main.9a7ff5dc.js.map": "/password-appliction/static/js/main.9a7ff5dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf66c2fc.css",
+    "static/js/main.9a7ff5dc.js"
+  ]
+}
