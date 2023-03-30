@@ -64,6 +64,7 @@ export const SearchForm = () => {
             <p className="text">*the password must be at least 8 characters</p>
           )}
       </div>
+
       <ul>
         <li style={{ color: simpleColor }} className="password-level">
           The password is easy
