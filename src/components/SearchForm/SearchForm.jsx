@@ -10,34 +10,30 @@ export const SearchForm = () => {
   const [secureColor, setSecureColor] = useState('grey');
 
   const onChange = value => {
+    const lettersContain = value.match(lettersRegexp);
+    const numbersContain = value.match(numbersRegexp);
+    const symbolsContain = value.match(symbolsRegexp);
+
     if (value.length < 8) {
       setSimpleColor('red');
       setMediumColor('red');
       setSecureColor('red');
     } else {
-      if (
-        value.match(lettersRegexp) ||
-        value.match(numbersRegexp) ||
-        value.match(symbolsRegexp)
-      ) {
+      if (lettersContain || numbersContain || symbolsContain) {
         setSimpleColor('red');
         setMediumColor('grey');
         setSecureColor('grey');
       }
       if (
-        (value.match(numbersRegexp) && value.match(lettersRegexp)) ||
-        (value.match(symbolsRegexp) && value.match(numbersRegexp)) ||
-        (value.match(lettersRegexp) && value.match(symbolsRegexp))
+        (numbersContain && lettersContain) ||
+        (symbolsContain && numbersContain) ||
+        (lettersContain && symbolsContain)
       ) {
         setSimpleColor('yellow');
         setMediumColor('yellow');
         setSecureColor('grey');
       }
-      if (
-        value.match(numbersRegexp) &&
-        value.match(lettersRegexp) &&
-        value.match(symbolsRegexp)
-      ) {
+      if (numbersContain && lettersContain && symbolsContain) {
         setSimpleColor('green');
         setMediumColor('green');
         setSecureColor('green');
