@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/password-appliction/static/css/main.bf66c2fc.css",
-    "main.js": "/password-appliction/static/js/main.e8e1d930.js",
+    "main.js": "/password-appliction/static/js/main.62949428.js",
     "index.html": "/password-appliction/index.html",
     "main.bf66c2fc.css.map": "/password-appliction/static/css/main.bf66c2fc.css.map",
-    "main.e8e1d930.js.map": "/password-appliction/static/js/main.e8e1d930.js.map"
+    "main.62949428.js.map": "/password-appliction/static/js/main.62949428.js.map"
   },
   "entrypoints": [
     "static/css/main.bf66c2fc.css",
-    "static/js/main.e8e1d930.js"
+    "static/js/main.62949428.js"
   ]
 }
