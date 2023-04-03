@@ -1,5 +1,9 @@
-import { SearchForm } from './SearchForm/SearchForm';
+import { PasswordCheckApp } from './PasswordCheckApp/PasswordCheckApp';
 
 export const App = () => {
-  return <SearchForm />;
+  return (
+    <div className="container">
+      <PasswordCheckApp />
+    </div>
+  );
 };
